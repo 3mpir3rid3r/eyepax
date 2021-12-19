@@ -46,11 +46,12 @@ public class ColorGrid {
         return random.nextInt(max - min + 1) + min;
     }
 
+
     public Color[][] swapRowCols() {
         Color[][] result = new Color[getColors()[0].length][getColors().length];
         for (int i = 0; i < getColors().length; i++) {
             for (int j = 0; j < getColors()[0].length; j++) {
-                result[j][i] = getColors()[i][j];
+                result[j][i] = getColors()[i][j]; //change row color to column color
             }
         }
         return result;
